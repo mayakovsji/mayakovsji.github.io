@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mathjax测试]]></title>
+    <url>%2F2018%2F09%2F05%2Fmathjax-test%2F</url>
+    <content type="text"><![CDATA[mathjax效果演示 f(x)= \begin{cases} 0& \text{x=0}\\ 1& \text{x!=0} \end{cases}有空再更教程]]></content>
+      <tags>
+        <tag>mathjax</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[搬运:科学上网浏览器]]></title>
-    <url>%2F2018%2F01%2F08%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[搬运:科学上网浏览器 原帖及更新地址 使用方法：见目录下使用说明 2018.9.5 update: 此方法基本已废]]></content>
+    <url>%2F2018%2F01%2F08%2Ffree-over-the-GFW%2F</url>
+    <content type="text"><![CDATA[原帖及更新地址 使用方法：见目录下使用说明 2018.9.5 update: 此方法基本已废]]></content>
       <tags>
         <tag>科学上网</tag>
       </tags>
