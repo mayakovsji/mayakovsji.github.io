@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[伽马射线实验报告]]></title>
+    <url>%2F2022%2F05%2F10%2F%E4%BC%BD%E9%A9%AC%E5%B0%84%E7%BA%BF%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%2F</url>
+    <content type="text"><![CDATA[伽马射线与物质相互作用 拟合求里德伯常量 \begin {equation} B_k = R_y (Z-1)^2 \label{1} \\ \end {equation}where $ B_k = E - E_e$ 以$(Z-1)^2$为自变量，$B_k$为因变量做线性拟合，斜率即为$R_y$。 $type$ $E_e / keV$ $Z$ $(Z-1)^2$ $B_k / keV$ Pb 573.71 82 6561 88.29 Au 581.04 79 6084 80.96 Ba 624.55 56 3025 37.45 Ag 636.49 47 2116 25.51 Cu 653.02 29 784 8.98 Fe 654.89 26 625 7.11 Ti 657.03 22 441 4.97 Al 660.44 13 144 1.56 C 6 25 没探到 得到 R_y = 13.6eV吸收系数测量由 I=I_0 e^{-\mu t},I\propto N有 N = N_0 e ^ {-\mu t}Hence ln(N) = ln(N_0) - \mu t线性拟合 $ln(N) - t$ $N$ $t / mm$ $lnN$ 401 1 5.99 359 2 5.88 348 5 5.85 289 8 5.67 320 10 5.77 288 12 5.66 390 0 5.97 得到 \mu = 0.0263mm康普顿散射实验 $\theta / ^{\circ}$ $E_e / ke$V 10 648 20 612 30 570 40 513 50 438 60 402 70 351 80 324 90 294 100 258 110 243 120 219 130 210 140 198 150 192 160 186]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[施图姆-刘维尔的一些研究]]></title>
-    <url>%2F2022%2F02%2F26%2Fpage%2F</url>
-    <content type="text"></content>
+    <url>%2F2022%2F02%2F26%2FStorm_liouville_equation_researches%2F</url>
+    <content type="text"><![CDATA[简介我们知道，任何二阶线性常微分方程都可以化为施图姆-刘维尔方程： \frac {\rm d} {\rm dx} \left [p(x)\frac {\rm dy} {\rm dx} \right] + q(x)y+\lambda \rho(x) y = 0鉴于一般的施图姆-刘维尔理论没什么意思，因为我不会，我们来看一些特殊情况。 （不想写，摸了）]]></content>
       <categories>
         <category>研究</category>
       </categories>
