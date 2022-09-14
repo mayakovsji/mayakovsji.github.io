@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="jizhou&#39;s blog">
 <meta property="og:description" content="实数系与实数列的极限实数系自然数    N = \{ 0, 1, 2, 3, ... \}      半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases} 整数 Z = \{ 0,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2022-09-14T06:03:46.752Z">
+<meta property="og:updated_time" content="2022-09-14T14:30:06.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="calculus">
 <meta name="twitter:description" content="实数系与实数列的极限实数系自然数    N = \{ 0, 1, 2, 3, ... \}      半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases} 整数 Z = \{ 0,">
@@ -385,8 +385,9 @@
 <p>定义:A的最小上界称为A的上（下）确界 <script type="math/tex">sup \ A \ (inf \ A)</script></p>
 <p>如果 <script type="math/tex">sup A \in A, max A := sup A</script></p>
 <p>确界定理：有上界的非空数集必有上确界。</p>
-<h2 id="数列极限的基本概念"><a href="#数列极限的基本概念" class="headerlink" title="数列极限的基本概念"></a>数列极限的基本概念</h2><p>定义（极限）：<script type="math/tex">对数列\{a_n\}及常数A,\forall\epsilon>0,\exists N \in N s.t. \ \forall n>N \ |a_n - A| < \epsilon，则称\{a_n\}有极限A， 也称收敛于A，记为\lim  _{n \rightarrow \infty} = A，或 a_n \rightarrow A</script></p>
-<script type="math/tex; mode=display">e.g.$$ 设 $$0 < |q| < 1$$， 求证$$\lim\limits_{n \rightarrow \infty} q^n = 0</script><p>证：        <script type="math/tex">|a_n - A| = |q|^n < \epsilon \Leftrightarrow n > \frac {\log \epsilon} {\log |q|}</script></p>
+<h2 id="数列极限的基本概念"><a href="#数列极限的基本概念" class="headerlink" title="数列极限的基本概念"></a>数列极限的基本概念</h2><p>定义（极限）：</p>
+<script type="math/tex; mode=display">对数列\{a_n\}及常数A,\forall\epsilon>0,\exists N \in N s.t. \ \forall n>N \ |a_n - A| < \epsilon，则称\{a_n\}有极限A， 也称收敛于A，记为\lim  _{n \rightarrow \infty} = A，或 a_n \rightarrow A</script><p>e.g. <script type="math/tex">设 0 < |q| < 1</script>  求证  <script type="math/tex">\lim\limits_{n \rightarrow \infty} q^n = 0</script></p>
+<p>证：        <script type="math/tex">|a_n - A| = |q|^n < \epsilon \Leftrightarrow n > \frac {\log \epsilon} {\log |q|}</script></p>
 <p>​                <script type="math/tex">\forall \epsilon > 0, N := \frac {\log \epsilon} {\log |q|}, when \ n > N, |a_n - A| < \epsilon</script></p>
 <h2 id="收敛数列的性质"><a href="#收敛数列的性质" class="headerlink" title="收敛数列的性质"></a>收敛数列的性质</h2><p>性质1 若数列<script type="math/tex">\{a_n\}</script>收敛，则它的极限是唯一的</p>
 <p>性质2 在一个收敛数列<script type="math/tex">\{a_n\}</script>中任意添加、删去有限项，或者任意改变有限项的值，不会改变该数列的收敛性与极限值</p>
@@ -394,7 +395,7 @@
 <p>性质3 若数列<script type="math/tex">\{a_n\}</script>收敛于A,则它的任何子列都收敛于A</p>
 <p>e.g. 证明{1, -1, 1, -1, 1, -1, …}发散 ： 两子列收敛于-1, 1</p>
 <p>性质4 收敛数列一定有界</p>
-<p>定理 (夹逼原理)<br>设数列 $\left{a<em>n\right},\left{b_n\right}$ 和 $\left{x_n\right}$ 满足条件， $\exists n_0 \in N$, 使得当 $n&gt;n_0$ 时有 $a_n \leqslant x_n \leqslant b_n$.<br>若 $\lim \limits </em>{n \rightarrow \infty} a<em>n=\lim \limits</em>{n \rightarrow \infty} b<em>n=A$, 则 $\lim \limits</em>{n \rightarrow \infty} x_n=A$.</p>
+<p>定理 (夹逼原理)<br>设数列 <script type="math/tex">\left\{a_n\right\},\left\{b_n\right\}</script> 和 <script type="math/tex">\left\{x_n\right\}</script> 满足条件， <script type="math/tex">\exists n_0 \in N</script>, 使得当 <script type="math/tex">n>n_0</script> 时有 <script type="math/tex">a_n \leqslant x_n \leqslant b_n</script>.<br>若 <script type="math/tex">\lim \limits _{n \rightarrow \infty} a_n=\lim \limits_{n \rightarrow \infty} b_n=A</script>, 则 <script type="math/tex">\lim \limits_{n \rightarrow \infty} x_n=A</script></p>
 
       
     </div>
