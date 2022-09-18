@@ -507,12 +507,14 @@
       
         
           
-            <h1 id="System-of-linear-equations"><a href="#System-of-linear-equations" class="headerlink" title="System of linear equations"></a>System of linear equations</h1><script type="math/tex; mode=display">\begin{cases} x_1 + a_{12}x_2 = b_1 \\ x_1 + a_{22}x_2 = b_2 \end{cases}</script><p>consistent: there are solutions (cross)</p>
+            <a id="more"></a>
+<h1 id="System-of-linear-equations"><a href="#System-of-linear-equations" class="headerlink" title="System of linear equations"></a>System of linear equations</h1><script type="math/tex; mode=display">\begin{cases} x_1 + a_{12}x_2 = b_1 \\ x_1 + a_{22}x_2 = b_2 \end{cases}</script><p>consistent: there are solutions (cross)</p>
 <p>inconsistent : …… (parallel)</p>
 <script type="math/tex; mode=display">
 \sum \limits^{n}_{i = 1}a_{ji}x_i=b_j \ , j = 1,2,...,n</script><p>coefficient matrix 系数矩阵</p>
 <p>augmented matrix 增广矩阵</p>
 <p>echelon form 阶梯形式</p>
+<p><strong>增广矩阵最后一列也是主元！！！！！！</strong></p>
 
           
         
@@ -580,7 +582,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2022/09/14/calculus/" itemprop="url">calculus</a></h1>
+                <a class="post-title-link" href="/2022/09/14/calculus/" itemprop="url">微积分笔记</a></h1>
         
 
         <div class="post-meta">
@@ -654,7 +656,8 @@
       
         
           
-            <h1 id="实数系与实数列的极限"><a href="#实数系与实数列的极限" class="headerlink" title="实数系与实数列的极限"></a>实数系与实数列的极限</h1><h2 id="实数系"><a href="#实数系" class="headerlink" title="实数系"></a>实数系</h2><p>自然数    <script type="math/tex">N = \{ 0, 1, 2, 3, ... \}</script>      <script type="math/tex">半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases}</script></p>
+            <a id="more"></a>
+<h1 id="实数系与实数列的极限"><a href="#实数系与实数列的极限" class="headerlink" title="实数系与实数列的极限"></a>实数系与实数列的极限</h1><h2 id="实数系"><a href="#实数系" class="headerlink" title="实数系"></a>实数系</h2><p>自然数    <script type="math/tex">N = \{ 0, 1, 2, 3, ... \}</script>      <script type="math/tex">半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases}</script></p>
 <p>整数 <script type="math/tex">Z = \{ 0, \pm 1, \pm 2, \pm 3, ... \}</script>             <script type="math/tex">\underbrace{\underbrace {+, 0, -} _{加法群}          \underbrace {\times, 1} _{乘法半群}} _{环（交换群加半群）}</script></p>
 <p>有理数 <script type="math/tex">Q = \{ \frac {p} {q} | p, q \in Z, q \not= 0 \}</script>             <script type="math/tex">\underbrace {+, 0, -, \times , 1, \div} _域</script> </p>
 <p>实数 <script type="math/tex">R</script> 直观：直线上的点 <script type="math/tex">\leftrightarrow</script> 直线无洞</p>
@@ -674,6 +677,19 @@
 <p>e.g. 证明{1, -1, 1, -1, 1, -1, …}发散 ： 两子列收敛于-1, 1</p>
 <p>性质4 收敛数列一定有界</p>
 <p>定理 (夹逼原理)<br>设数列 <script type="math/tex">\left\{a_n\right\},\left\{b_n\right\}</script> 和 <script type="math/tex">\left\{x_n\right\}</script> 满足条件， <script type="math/tex">\exists n_0 \in N</script>, 使得当 <script type="math/tex">n>n_0</script> 时有 <script type="math/tex">a_n \leqslant x_n \leqslant b_n</script>.<br>若 <script type="math/tex">\lim \limits _{n \rightarrow \infty} a_n=\lim \limits_{n \rightarrow \infty} b_n=A</script>, 则 <script type="math/tex">\lim \limits_{n \rightarrow \infty} x_n=A</script></p>
+<h2 id="单调数列"><a href="#单调数列" class="headerlink" title="单调数列"></a>单调数列</h2><p>定义 （1）如果<script type="math/tex">\forall n, a_n<=a_{n + 1}，则称数列\{a_n\}单调递增</script></p>
+<p>​         （2）<script type="math/tex">\forall n, a_n<a_{n + 1}，则称数列\{a_n\}严格单调递增</script></p>
+<p>定理 单调递增且有上界的数列必定收敛</p>
+<p>证明 </p>
+<script type="math/tex; mode=display">
+上界M \Leftrightarrow& a_n <= M\\
+上确界A \Leftrightarrow& \begin{cases} \forall n, a_n <= A \\ \forall \epsilon > 0, \exists N, s.t.a_N > A-\epsilon \end{cases} \\</script><script type="math/tex; mode=display">
+\forall n > N , A - \epsilon < a_N <= a_n<= A \Rightarrow \lim \limits_{n \rightarrow \infty}a_n = A</script><p>定义 <script type="math/tex">若\forall M > 0 , \exists N \in N, s.t. \forall n > N, |a_n| > M, a_n \rightarrow \infty (n \rightarrow \infty)</script></p>
+<script type="math/tex; mode=display">若\forall M > 0 , \exists N \in N, s.t. \forall n > N, a_n > M, a_n \rightarrow +\infty (n \rightarrow \infty)</script><p>Stolz定理 1.<script type="math/tex">\infty \text{\\} \infty</script> 2.0\0</p>
+<h2 id="关于实数系的几个基本定理"><a href="#关于实数系的几个基本定理" class="headerlink" title="关于实数系的几个基本定理"></a>关于实数系的几个基本定理</h2><p>1.确界定理</p>
+<p>2.单调收敛定理</p>
+<p>3.有界数列必有收敛子列</p>
+<p>4.柯西收敛定理(<script type="math/tex">\{x_n\}收敛 \Leftrightarrow \{x_n\} 为柯西列</script>) (<script type="math/tex">\forall \epsilon > 0, \exists N \in N, s.t.n, m > N , |x_n - x_ m| < \epsilon</script>)</p>
 
           
         

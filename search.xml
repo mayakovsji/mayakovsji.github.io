@@ -8,7 +8,7 @@
   <entry>
     <title><![CDATA[线性代数笔记]]></title>
     <url>%2F2022%2F09%2F14%2Flinear-algebra%2F</url>
-    <content type="text"><![CDATA[System of linear equations\begin{cases} x_1 + a_{12}x_2 = b_1 \\ x_1 + a_{22}x_2 = b_2 \end{cases}consistent: there are solutions (cross) inconsistent : …… (parallel) \sum \limits^{n}_{i = 1}a_{ji}x_i=b_j \ , j = 1,2,...,ncoefficient matrix 系数矩阵 augmented matrix 增广矩阵 echelon form 阶梯形式]]></content>
+    <content type="text"><![CDATA[System of linear equations\begin{cases} x_1 + a_{12}x_2 = b_1 \\ x_1 + a_{22}x_2 = b_2 \end{cases}consistent: there are solutions (cross) inconsistent : …… (parallel) \sum \limits^{n}_{i = 1}a_{ji}x_i=b_j \ , j = 1,2,...,ncoefficient matrix 系数矩阵 augmented matrix 增广矩阵 echelon form 阶梯形式 增广矩阵最后一列也是主元！！！！！！]]></content>
       <categories>
         <category>笔记</category>
       </categories>
@@ -17,9 +17,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[calculus]]></title>
+    <title><![CDATA[微积分笔记]]></title>
     <url>%2F2022%2F09%2F14%2Fcalculus%2F</url>
-    <content type="text"><![CDATA[实数系与实数列的极限实数系自然数 N = \{ 0, 1, 2, 3, ... \} 半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases} 整数 Z = \{ 0, \pm 1, \pm 2, \pm 3, ... \} \underbrace{\underbrace {+, 0, -} _{加法群} \underbrace {\times, 1} _{乘法半群}} _{环（交换群加半群）} 有理数 Q = \{ \frac {p} {q} | p, q \in Z, q \not= 0 \} \underbrace {+, 0, -, \times , 1, \div} _域 实数 R 直观：直线上的点 \leftrightarrow 直线无洞 复数 C 代数封闭 定义:A是非空数集， 若\exists M \in R, s.t. \forall x \in A, 有 x \leq M, 则称M为A的上界 定义:A的最小上界称为A的上（下）确界 sup \ A \ (inf \ A) 如果 sup A \in A, max A := sup A 确界定理：有上界的非空数集必有上确界。 数列极限的基本概念定义（极限）： 对数列\{a_n\}及常数A,\forall\epsilon>0,\exists N \in N s.t. \ \forall n>N \ |a_n - A| < \epsilon，则称\{a_n\}有极限A， 也称收敛于A，记为\lim _{n \rightarrow \infty} = A，或 a_n \rightarrow Ae.g. 设 0 < |q| < 1 求证 \lim\limits_{n \rightarrow \infty} q^n = 0 证： |a_n - A| = |q|^n < \epsilon \Leftrightarrow n > \frac {\log \epsilon} {\log |q|} ​ \forall \epsilon > 0, N := \frac {\log \epsilon} {\log |q|}, when \ n > N, |a_n - A| < \epsilon 收敛数列的性质性质1 若数列\{a_n\}收敛，则它的极限是唯一的 性质2 在一个收敛数列\{a_n\}中任意添加、删去有限项，或者任意改变有限项的值，不会改变该数列的收敛性与极限值 定义 设\{a_n\}是一个数列,0]]></content>
+    <content type="text"><![CDATA[实数系与实数列的极限实数系自然数 N = \{ 0, 1, 2, 3, ... \} 半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases} 整数 Z = \{ 0, \pm 1, \pm 2, \pm 3, ... \} \underbrace{\underbrace {+, 0, -} _{加法群} \underbrace {\times, 1} _{乘法半群}} _{环（交换群加半群）} 有理数 Q = \{ \frac {p} {q} | p, q \in Z, q \not= 0 \} \underbrace {+, 0, -, \times , 1, \div} _域 实数 R 直观：直线上的点 \leftrightarrow 直线无洞 复数 C 代数封闭 定义:A是非空数集， 若\exists M \in R, s.t. \forall x \in A, 有 x \leq M, 则称M为A的上界 定义:A的最小上界称为A的上（下）确界 sup \ A \ (inf \ A) 如果 sup A \in A, max A := sup A 确界定理：有上界的非空数集必有上确界。 数列极限的基本概念定义（极限）： 对数列\{a_n\}及常数A,\forall\epsilon>0,\exists N \in N s.t. \ \forall n>N \ |a_n - A| < \epsilon，则称\{a_n\}有极限A， 也称收敛于A，记为\lim _{n \rightarrow \infty} = A，或 a_n \rightarrow Ae.g. 设 0 < |q| < 1 求证 \lim\limits_{n \rightarrow \infty} q^n = 0 证： |a_n - A| = |q|^n < \epsilon \Leftrightarrow n > \frac {\log \epsilon} {\log |q|} ​ \forall \epsilon > 0, N := \frac {\log \epsilon} {\log |q|}, when \ n > N, |a_n - A| < \epsilon 收敛数列的性质性质1 若数列\{a_n\}收敛，则它的极限是唯一的 性质2 在一个收敛数列\{a_n\}中任意添加、删去有限项，或者任意改变有限项的值，不会改变该数列的收敛性与极限值 定义 设\{a_n\}是一个数列,0 N , |x_n - x_ m| < \epsilon)]]></content>
       <categories>
         <category>笔记</category>
       </categories>
