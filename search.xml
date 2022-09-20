@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[to_do_list]]></title>
     <url>%2F2035%2F01%2F01%2Fto-do-list%2F</url>
-    <content type="text"><![CDATA[记录一些想学的东西，如果有空或者大家感兴趣可能会写成文章吧 [ ] python [ ] 复习一下算法（都忘得差不多了） [x] 日本近代史 [ ] 中世纪的继承法、法理和宣称 [ ] 国际共运史]]></content>
+    <content type="text"><![CDATA[记录一些想学的东西，如果有空或者大家感兴趣可能会写成文章吧 [ ] python [ ] 复习一下算法（都忘得差不多了） [x] 日本近代史 [ ] 中世纪的继承法、法理和宣称 [ ] 国际共运史 Tentative Schedule Week 1: C/C++ Introduction, Editors, IDEs, Version Control, Writing first program, Compiling, Linking, Variables, Datatypes, Arithmetic Operators Week 2: Array, String, Struct, Control Flow (Branching, Loops) Week 3: Pointers, Pointer Arithmetic, Debugging (gdb), Functions and Modular Programming, Variable Scope Week 4: Recursion, Dynamic Memory Allocations, Garbage Collection Week 5: Encapsulation, Object, Class, Constructor, Destructor, Member Function, Overloading Week 6: Inheritance and Polymorphism, Template, STL Week 7: Miscellaneous (Type Cast, Friends, Exception, etc.), Modern C++ (C++ 11 and beyond), Writing Effective C++, Coding Style, Coding Habits Week 8: Code Performance Week 9 - Week 15: Codeing Projects + Discussion Sessions]]></content>
   </entry>
   <entry>
     <title><![CDATA[线性代数笔记]]></title>
@@ -75,5 +75,21 @@
       <tags>
         <tag>转载</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[思政]]></title>
+    <url>%2F1899%2F11%2F30%2F%E6%80%9D%E6%94%BF%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[党的知识概论]]></title>
+    <url>%2F1899%2F11%2F30%2F%E5%85%9A%E7%9A%84%E7%9F%A5%E8%AF%86%E6%A6%82%E8%AE%BA%2F</url>
+    <content type="text"><![CDATA[政党知识概论政党是一种政治现象（组织、制度） 国家、政府、官员、内阁 政党属于（近代社会）晚出的政治现象 政党是现代政治生活的核心组织，从某种意义上讲，现代政治生活是“政党生活” 现代国家：政党领导国家政治生活 政党的起源 前现代渊源：朋党、会党 近代起源：资产阶级革命 英国议会、法国国民议会、美国建国 政党的概念 伯克：政党乃为基于大家所一致同意的某种特定主义，以共同奋斗来促进国家利益而结合的团体 《大英百科全书》：政党是某个政治制度内，通过选举或革命手段，以取得和行使政治权利为目的而建立的组织 《韦氏大词典》：政党是一群人以指导政府政策为目的而组成的团体。 罗斯金：政党是联系公众与政府的桥梁 政党的本质 马克思：政党是阶级的组织，是阶级的一部分。“政党是一定阶级、阶层或集团的积极分子为维护本阶级、阶层或集团的利益，围绕着夺取政权、巩固政权或者影响政府而结合起来采取共同行动的政治组织。 政党的功能 政治代表(阶级、阶层、集团利益) 政治录用（培养政治精英，向国家机器输送人才） 政治动员（革命、竞选、治理） 利益聚合（表达、整合及加总） 政治领导（国家权力行使、政治议程设置） 政治社会化（认同塑造、意识形态传承） 政党的类型 阶级属性：资产阶级/无产阶级 政治地位：执政党、反对党、参政党、革命党 意识形态：左中右翼政党、绿党、激进党、保守党、民族主义党 组织特征：干部型政党（列宁主义政党）、群众性政党 政党政治的未来趋势 政党政治仍然是各国政治的基本特征 西方政治制度的衰败：意识形态极化、政治僵局、政治世袭 互联网、新媒体对政治竞选的影响：政治疏离vs行动主义；领袖型政党 发展中世界的政党能力（组织、动员、政治统领）塑造着执政绩效 经济不平等与民粹主义在全球的盛行 中国共产党的特征 列宁主义政党、先锋队政党、革命性政党、民族复兴、动员型政党、意识形态型政党、适应型政党、学习型政党 一个伟大梦想：实现中华民族伟大复兴 三个深刻改变：深刻改变了近代以后中华民族发展的方向和进程，深刻改变了中国人民和中华民族的前途和命运，深刻改变了世界发展的趋势和格局 五个庄严宣告： 结论与讨论 现代国家的政治生活本质上是政党政治 政党的多重功能 中国共产党具备多重复合特征，是理解中国之治的”钥匙“ 政党建设是促进国家建设的关键动力 政党能力的三个关键维度：特定主义（意识形态），联结政权与社会、政党组织化运行]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
   </entry>
 </search>
