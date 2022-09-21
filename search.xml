@@ -6,9 +6,28 @@
     <content type="text"><![CDATA[记录一些想学的东西，如果有空或者大家感兴趣可能会写成文章吧 [ ] python [ ] 复习一下算法（都忘得差不多了） [x] 日本近代史 [ ] 中世纪的继承法、法理和宣称 [ ] 国际共运史 Tentative Schedule Week 1: C/C++ Introduction, Editors, IDEs, Version Control, Writing first program, Compiling, Linking, Variables, Datatypes, Arithmetic Operators Week 2: Array, String, Struct, Control Flow (Branching, Loops) Week 3: Pointers, Pointer Arithmetic, Debugging (gdb), Functions and Modular Programming, Variable Scope Week 4: Recursion, Dynamic Memory Allocations, Garbage Collection Week 5: Encapsulation, Object, Class, Constructor, Destructor, Member Function, Overloading Week 6: Inheritance and Polymorphism, Template, STL Week 7: Miscellaneous (Type Cast, Friends, Exception, etc.), Modern C++ (C++ 11 and beyond), Writing Effective C++, Coding Style, Coding Habits Week 8: Code Performance Week 9 - Week 15: Codeing Projects + Discussion Sessions]]></content>
   </entry>
   <entry>
+    <title><![CDATA[python学习踩坑记录]]></title>
+    <url>%2F2022%2F09%2F21%2Fpython-learning%2F</url>
+    <content type="text"><![CDATA[引用 &amp; 拷贝1 可变对象 &amp; 不可变对象 在Python中，对象分为两种：可变对象和不可变对象。 不可变对象包括int，float，long，str，tuple等，可变对象包括list，set，dict等。 不可变对象修改时，事实上创建了新的变量，如： 1234567a = 1print(id(a))a += 1print(id(a))output:22599241566562259924156688 因此，在函数传参时，若传入可变对象，修改之后指向的是新的变量，不影响原变量，而传入不可变对象，修改将涉及原变量。（我戏称为“可变不可变，不可变可变”） 12345678910111213def func(dat): dat += 1a = 1func(a)print(a)output : 1def func(dat): dat += [1]a = [1, 2, 3]func(a)print(a)output : [1, 2, 3, 1] 深复制 &amp; 浅复制一般=代表引用，（浅）复制列表value的语法是`value[:] 1234a = [0, [1, 2], 3]b = a[:]a[0] = 8a[1][1] = 9 问：此时 a 和 b 分别是多少？ 正确答案是 a 为 [8, [1, 9], 3]，b 为 [0, [1, 9], 3]。发现没？b 的第二个元素也被改变了。想想是为什么？不明白的话看下图 真正的深复制（完全创造一份新的副本） 123import copya = [0, [1, 2], 3]b = copy.deepcopy(a) 1:部分引自python基础： 深入理解 python 中的赋值、引用、拷贝、作用域]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[计算机入门]]></title>
+    <url>%2F2022%2F09%2F21%2Fcs-introduction%2F</url>
+    <content type="text"><![CDATA[A Crash Course of Linear AlgebraNorms \begin{cases} p(x + y) = 0, p(x) = 0 \ only \ if \ x = 0 \end{cases}p-norms: \begin{Vmatrix} \vec{v} \end{Vmatrix}_p = \left(\sum \limits _i |v_i|^p\right)^{\frac{1}{p}}norm equivalence: \exists c, C, s.t. \ cp(x)]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[线性代数笔记]]></title>
     <url>%2F2022%2F09%2F14%2Flinear-algebra%2F</url>
-    <content type="text"><![CDATA[System of linear equations\begin{cases} x_1 + a_{12}x_2 = b_1 \\ x_1 + a_{22}x_2 = b_2 \end{cases}consistent: there are solutions (cross) inconsistent : …… (parallel) \sum \limits^{n}_{i = 1}a_{ji}x_i=b_j \ , j = 1,2,...,ncoefficient matrix 系数矩阵 augmented matrix 增广矩阵 echelon form 阶梯形式 增广矩阵最后一列也是主元！！！！！！]]></content>
+    <content type="text"><![CDATA[System of linear equations \begin{cases} x_1 + a_{12}x_2 = b_1 \\ x_1 + a_{22}x_2 = b_2 \end{cases}consistent: there are solutions (cross) inconsistent : …… (parallel) \sum \limits^{n}_{i = 1}a_{ji}x_i=b_j \ , j = 1,2,...,ncoefficient matrix 系数矩阵 augmented matrix 增广矩阵 echelon form 阶梯形式 增广矩阵最后一列也是主元！！！！！！]]></content>
       <categories>
         <category>笔记</category>
       </categories>
@@ -19,7 +38,7 @@
   <entry>
     <title><![CDATA[微积分笔记]]></title>
     <url>%2F2022%2F09%2F14%2Fcalculus%2F</url>
-    <content type="text"><![CDATA[实数系与实数列的极限实数系自然数 N = \{ 0, 1, 2, 3, ... \} 半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases} 整数 Z = \{ 0, \pm 1, \pm 2, \pm 3, ... \} \underbrace{\underbrace {+, 0, -} _{加法群} \underbrace {\times, 1} _{乘法半群}} _{环（交换群加半群）} 有理数 Q = \{ \frac {p} {q} | p, q \in Z, q \not= 0 \} \underbrace {+, 0, -, \times , 1, \div} _域 实数 R 直观：直线上的点 \leftrightarrow 直线无洞 复数 C 代数封闭 定义:A是非空数集， 若\exists M \in R, s.t. \forall x \in A, 有 x \leq M, 则称M为A的上界 定义:A的最小上界称为A的上（下）确界 sup \ A \ (inf \ A) 如果 sup A \in A, max A := sup A 确界定理：有上界的非空数集必有上确界。 数列极限的基本概念定义（极限）： 对数列\{a_n\}及常数A,\forall\epsilon>0,\exists N \in N s.t. \ \forall n>N \ |a_n - A| < \epsilon，则称\{a_n\}有极限A， 也称收敛于A，记为\lim _{n \rightarrow \infty} = A，或 a_n \rightarrow Ae.g. 设 0 < |q| < 1 求证 \lim\limits_{n \rightarrow \infty} q^n = 0 证： |a_n - A| = |q|^n < \epsilon \Leftrightarrow n > \frac {\log \epsilon} {\log |q|} ​ \forall \epsilon > 0, N := \frac {\log \epsilon} {\log |q|}, when \ n > N, |a_n - A| < \epsilon 收敛数列的性质性质1 若数列\{a_n\}收敛，则它的极限是唯一的 性质2 在一个收敛数列\{a_n\}中任意添加、删去有限项，或者任意改变有限项的值，不会改变该数列的收敛性与极限值 定义 设\{a_n\}是一个数列,0 N , |x_n - x_ m| < \epsilon)]]></content>
+    <content type="text"><![CDATA[实数系与实数列的极限 实数系自然数 N = \{ 0, 1, 2, 3, ... \} 半群\begin{cases} 加法: a + b = c \\ 零元：0 + a = a = a + 0 \\ 结合律: (a + b) + c = a + (b + c) \\ （若有逆元）: a + (-a) = 0 \rightarrow 群\end{cases} 整数 Z = \{ 0, \pm 1, \pm 2, \pm 3, ... \} \underbrace{\underbrace {+, 0, -} _{加法群} \underbrace {\times, 1} _{乘法半群}} _{环（交换群加半群）} 有理数 Q = \{ \frac {p} {q} | p, q \in Z, q \not= 0 \} \underbrace {+, 0, -, \times , 1, \div} _域 实数 R 直观：直线上的点 \leftrightarrow 直线无洞 复数 C 代数封闭 定义:A是非空数集， 若\exists M \in R, s.t. \forall x \in A, 有 x \leq M, 则称M为A的上界 定义:A的最小上界称为A的上（下）确界 sup \ A \ (inf \ A) 如果 sup A \in A, max A := sup A 确界定理：有上界的非空数集必有上确界。 数列极限的基本概念定义（极限）： 对数列\{a_n\}及常数A,\forall\epsilon>0,\exists N \in N s.t. \ \forall n>N \ |a_n - A| < \epsilon，则称\{a_n\}有极限A， 也称收敛于A，记为\lim _{n \rightarrow \infty} = A，或 a_n \rightarrow Ae.g. 设 0 < |q| < 1 求证 \lim\limits_{n \rightarrow \infty} q^n = 0 证： |a_n - A| = |q|^n < \epsilon \Leftrightarrow n > \frac {\log \epsilon} {\log |q|} ​ \forall \epsilon > 0, N := \frac {\log \epsilon} {\log |q|}, when \ n > N, |a_n - A| < \epsilon 收敛数列的性质性质1 若数列\{a_n\}收敛，则它的极限是唯一的 性质2 在一个收敛数列\{a_n\}中任意添加、删去有限项，或者任意改变有限项的值，不会改变该数列的收敛性与极限值 定义 设\{a_n\}是一个数列,0 N , |x_n - x_ m| < \epsilon)]]></content>
       <categories>
         <category>笔记</category>
       </categories>
@@ -75,21 +94,5 @@
       <tags>
         <tag>转载</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[思政]]></title>
-    <url>%2F1899%2F11%2F30%2F%E6%80%9D%E6%94%BF%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[党的知识概论]]></title>
-    <url>%2F1899%2F11%2F30%2F%E5%85%9A%E7%9A%84%E7%9F%A5%E8%AF%86%E6%A6%82%E8%AE%BA%2F</url>
-    <content type="text"><![CDATA[政党知识概论政党是一种政治现象（组织、制度） 国家、政府、官员、内阁 政党属于（近代社会）晚出的政治现象 政党是现代政治生活的核心组织，从某种意义上讲，现代政治生活是“政党生活” 现代国家：政党领导国家政治生活 政党的起源 前现代渊源：朋党、会党 近代起源：资产阶级革命 英国议会、法国国民议会、美国建国 政党的概念 伯克：政党乃为基于大家所一致同意的某种特定主义，以共同奋斗来促进国家利益而结合的团体 《大英百科全书》：政党是某个政治制度内，通过选举或革命手段，以取得和行使政治权利为目的而建立的组织 《韦氏大词典》：政党是一群人以指导政府政策为目的而组成的团体。 罗斯金：政党是联系公众与政府的桥梁 政党的本质 马克思：政党是阶级的组织，是阶级的一部分。“政党是一定阶级、阶层或集团的积极分子为维护本阶级、阶层或集团的利益，围绕着夺取政权、巩固政权或者影响政府而结合起来采取共同行动的政治组织。 政党的功能 政治代表(阶级、阶层、集团利益) 政治录用（培养政治精英，向国家机器输送人才） 政治动员（革命、竞选、治理） 利益聚合（表达、整合及加总） 政治领导（国家权力行使、政治议程设置） 政治社会化（认同塑造、意识形态传承） 政党的类型 阶级属性：资产阶级/无产阶级 政治地位：执政党、反对党、参政党、革命党 意识形态：左中右翼政党、绿党、激进党、保守党、民族主义党 组织特征：干部型政党（列宁主义政党）、群众性政党 政党政治的未来趋势 政党政治仍然是各国政治的基本特征 西方政治制度的衰败：意识形态极化、政治僵局、政治世袭 互联网、新媒体对政治竞选的影响：政治疏离vs行动主义；领袖型政党 发展中世界的政党能力（组织、动员、政治统领）塑造着执政绩效 经济不平等与民粹主义在全球的盛行 中国共产党的特征 列宁主义政党、先锋队政党、革命性政党、民族复兴、动员型政党、意识形态型政党、适应型政党、学习型政党 一个伟大梦想：实现中华民族伟大复兴 三个深刻改变：深刻改变了近代以后中华民族发展的方向和进程，深刻改变了中国人民和中华民族的前途和命运，深刻改变了世界发展的趋势和格局 五个庄严宣告： 结论与讨论 现代国家的政治生活本质上是政党政治 政党的多重功能 中国共产党具备多重复合特征，是理解中国之治的”钥匙“ 政党建设是促进国家建设的关键动力 政党能力的三个关键维度：特定主义（意识形态），联结政权与社会、政党组织化运行]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
   </entry>
 </search>
