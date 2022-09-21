@@ -8,7 +8,7 @@
   <entry>
     <title><![CDATA[python学习踩坑记录]]></title>
     <url>%2F2022%2F09%2F21%2Fpython-learning%2F</url>
-    <content type="text"><![CDATA[引用 &amp; 拷贝1 可变对象 &amp; 不可变对象 在Python中，对象分为两种：可变对象和不可变对象。 不可变对象包括int，float，long，str，tuple等，可变对象包括list，set，dict等。 不可变对象修改时，事实上创建了新的变量，如： 1234567a = 1print(id(a))a += 1print(id(a))output:22599241566562259924156688 因此，在函数传参时，若传入可变对象，修改之后指向的是新的变量，不影响原变量，而传入不可变对象，修改将涉及原变量。（我戏称为“可变不可变，不可变可变”） 12345678910111213def func(dat): dat += 1a = 1func(a)print(a)output : 1def func(dat): dat += [1]a = [1, 2, 3]func(a)print(a)output : [1, 2, 3, 1] 深复制 &amp; 浅复制一般=代表引用，（浅）复制列表value的语法是`value[:] 1234a = [0, [1, 2], 3]b = a[:]a[0] = 8a[1][1] = 9 问：此时 a 和 b 分别是多少？ 正确答案是 a 为 [8, [1, 9], 3]，b 为 [0, [1, 9], 3]。发现没？b 的第二个元素也被改变了。想想是为什么？不明白的话看下图 真正的深复制（完全创造一份新的副本） 123import copya = [0, [1, 2], 3]b = copy.deepcopy(a) 1:部分引自python基础： 深入理解 python 中的赋值、引用、拷贝、作用域]]></content>
+    <content type="text"><![CDATA[引用 &amp; 拷贝1 可变对象 &amp; 不可变对象 在Python中，对象分为两种：可变对象和不可变对象。 不可变对象包括int，float，long，str，tuple等，可变对象包括list，set，dict等。 不可变对象修改时，事实上创建了新的变量，如： 1234567a = 1print(id(a))a += 1print(id(a))output:22599241566562259924156688 因此，在函数传参时，若传入可变对象，修改之后指向的是新的变量，不影响原变量，而传入不可变对象，修改将涉及原变量。（我戏称为“可变不可变，不可变可变”） 12345678910111213def func(dat): dat += 1a = 1func(a)print(a)output : 1def func(dat): dat += [1]a = [1, 2, 3]func(a)print(a)output : [1, 2, 3, 1] 深复制 &amp; 浅复制一般=代表引用，（浅）复制列表value的语法是`value[:] 1234a = [0, [1, 2], 3]b = a[:]a[0] = 8a[1][1] = 9 问：此时 a 和 b 分别是多少？ 正确答案是 a 为 [8, [1, 9], 3]，b 为 [0, [1, 9], 3]。发现没？b 的第二个元素也被改变了。想想是为什么？不明白的话看下图 真正的深复制（完全创造一份新的副本） 123import copya = [0, [1, 2], 3]b = copy.deepcopy(a) 1:1 部分引自python基础： 深入理解 python 中的赋值、引用、拷贝、作用域]]></content>
       <categories>
         <category>笔记</category>
       </categories>
