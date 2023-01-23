@@ -597,8 +597,9 @@ C &= a \\
 
   
     <div class="comments" id="comments">
-      <div id="vcomments"></div>
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTUyMy8xNjA1MA=="></div>
     </div>
+
   
 
 
@@ -930,30 +931,26 @@ C &= a \\
 
 
   
-
-
-
-
-
-
-
-
-
-
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/valine@1.1.6/dist/Valine.min.js"></script>
-  <script type="text/javascript">
-    new Valine({
-        av: AV,
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        app_id: 'hOxXeVmDvwxGfwlbtohk6A53-gzGzoHsz',
-        app_key: 'avbRlVp51XErL4WpOF9PX6FJ',
-        placeholder: 'Comment input placeholder'
-    });
-  </script>
+
+
+
+
+
+
+
+
+
 
 
 
